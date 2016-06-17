@@ -28,7 +28,7 @@
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/ivImage"
         android:layout_toEndOf="@+id/ivImage"
-        android:textSize="16sp"
+        android:textSize="14sp"
         android:paddingTop="4dp"
         android:textColor="#ffffff"
         android:textColorHighlight="#ffffff"
@@ -40,9 +40,12 @@
         android:layout_height="wrap_content"
         tools:text="Following the events of Age of Ultron, the collective governments of the world pass an act designed to regulate all superhuman activity. This polarizes opinion amongst the Avengers, causing two factions to side with Iron Man or Captain America, which causes an epic battle between former allies."
         android:id="@+id/tvOverview"
-        android:layout_below="@+id/tvTitle"
-        android:layout_toRightOf="@+id/ivImage"
-        android:layout_toEndOf="@+id/ivImage"
         android:textSize="10sp"
-        android:textColor="#bcbcbc" />
+        android:textColor="#bcbcbc"
+        android:layout_below="@+id/tvTitle"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/ivImage"
+        android:layout_toEndOf="@+id/ivImage" />
+
 </RelativeLayout>
