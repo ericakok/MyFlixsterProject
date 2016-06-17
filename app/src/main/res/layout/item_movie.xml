@@ -28,9 +28,12 @@
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/ivImage"
         android:layout_toEndOf="@+id/ivImage"
-        android:textSize="14sp"
+        android:textSize="16sp"
         android:paddingTop="4dp"
-        />
+        android:textColor="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:singleLine="false"
+        android:shadowColor="#ffffff" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -40,5 +43,6 @@
         android:layout_below="@+id/tvTitle"
         android:layout_toRightOf="@+id/ivImage"
         android:layout_toEndOf="@+id/ivImage"
-        android:textSize="10sp" />
+        android:textSize="10sp"
+        android:textColor="#bcbcbc" />
 </RelativeLayout>
