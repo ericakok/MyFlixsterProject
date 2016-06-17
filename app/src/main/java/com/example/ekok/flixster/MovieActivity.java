@@ -1,6 +1,7 @@
 package com.example.ekok.flixster;
 
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.ListView;
@@ -18,6 +19,7 @@ import java.util.ArrayList;
 
 import cz.msebera.android.httpclient.Header;
 
+
 public class MovieActivity extends AppCompatActivity {
 
     ArrayList<Movie> movies;
@@ -28,6 +30,9 @@ public class MovieActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_movie);
+
+        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        getSupportActionBar().setCustomView(R.layout.actionbar_title);
 
         lvItems = (ListView) findViewById(R.id.lvMovies);
         movies = new ArrayList<>();

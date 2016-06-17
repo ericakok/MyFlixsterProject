@@ -18,6 +18,10 @@ public class Movie {
         return String.format("https://image.tmdb.org/t/p/w342/%s", posterPath);
     }
 
+    public String getBannerPath() {
+        return String.format("https://image.tmdb.org/t/p/w342/%s", bannerPath);
+    }
+
     public String getOriginalTitle() {
         return originalTitle;
     }
@@ -27,10 +31,12 @@ public class Movie {
     }
 
     String posterPath;
+    String bannerPath;
     String overview;
 
     public Movie(JSONObject jsonObject) throws JSONException {
         this.posterPath = jsonObject.getString("poster_path");
+        this.bannerPath = jsonObject.getString("backdrop_path");
         this.originalTitle = jsonObject.getString("original_title");
         this.overview = jsonObject.getString("overview");
     }
@@ -48,6 +54,4 @@ public class Movie {
 
         return results;
     }
-
-
 }
